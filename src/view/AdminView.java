@@ -34,7 +34,8 @@ public class AdminView {
                     filmView.getRevenueOfFilm();
                     break;
                 case 5:
-                    System.exit(0);
+                    LoginView loginView = new LoginView();
+                    loginView.launcher();
             }
             checkAction = checkActionContinue();
         } while (checkAction);
@@ -46,7 +47,7 @@ public class AdminView {
         System.out.println("                               ║                                 [2] Manage order                                  ║");
         System.out.println("                               ║                                 [3] Manage customer                               ║");
         System.out.println("                               ║                                 [4] Revenue per film                              ║");
-        System.out.println("                               ║                                 [5] Exit                                          ║");
+        System.out.println("                               ║                                 [5] Log out                                       ║");
         System.out.println("                               ╚═══════════════════════════════════════════════════════════════════════════════════╝");
     }
 
